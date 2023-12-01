@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/dashboard/chart/main.jsx", "src/app/dashboard/chart/useChartLogic.js", "src/components/sidebar/index.jsx", "src/components/sidebar/index.jsx"],
   "exclude": ["node_modules"]
 }

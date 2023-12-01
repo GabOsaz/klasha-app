@@ -1,6 +1,11 @@
 import Dashboard from '../../assets/sidebarSvgIcons/Dashboard';
 import Balances from '../../assets/sidebarSvgIcons/Balances';
 import Transactions from '../../assets/sidebarSvgIcons/Transactions';
+import Analytics from '../../assets/sidebarSvgIcons/Analytics';
+import Marketing from '../../assets/sidebarSvgIcons/Marketing';
+import ExchangeRate from '../../assets/sidebarSvgIcons/ExchangeRate';
+import Checkout from '../../assets/sidebarSvgIcons/Checkout';
+import PaymentLinks from '../../assets/sidebarSvgIcons/PaymentLinks';
 import routeMap from '../../utils/routeMap';
 
 const routes = [
@@ -23,19 +28,19 @@ const routes = [
         to: routeMap.transactions,
       },
       {
-        icon: <Dashboard />,
+        icon: <Analytics route={routeMap.analytics} />,
         pageName: 'Analytics',
-        to: routeMap.dashboard,
+        to: routeMap.analytics,
       },
       {
-        icon: <Dashboard />,
+        icon: <Marketing route={routeMap.marketing} />,
         pageName: 'Marketing',
-        to: routeMap.dashboard,
+        to: routeMap.marketing,
       },
       {
-        icon: <Dashboard />,
+        icon: <ExchangeRate route={routeMap.exchangeRates} />,
         pageName: 'Exchange Rates',
-        to: routeMap.dashboard,
+        to: routeMap.exchangeRates,
       },
     ],
   },
@@ -43,14 +48,14 @@ const routes = [
     groupTitle: 'Accept payments',
     pages: [
       {
-        icon: <Dashboard />,
+        icon: <Checkout route={routeMap.exchangeRates} />,
         pageName: 'Checkout',
-        to: routeMap.dashboard,
+        to: routeMap.exchangeRates,
       },
       {
-        icon: <Dashboard />,
+        icon: <PaymentLinks route={routeMap.exchangeRates} />,
         pageName: 'Payment Links',
-        to: routeMap.dashboard,
+        to: routeMap.exchangeRates,
       },
     ],
   },
@@ -58,9 +63,9 @@ const routes = [
     groupTitle: 'Send payments',
     pages: [
       {
-        icon: <Dashboard />,
+        icon: <Dashboard route={routeMap.exchangeRates} />,
         pageName: 'Wire',
-        to: routeMap.dashboard,
+        to: routeMap.exchangeRates,
       },
     ],
   },

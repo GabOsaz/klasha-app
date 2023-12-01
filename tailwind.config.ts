@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         klashaWhite: '#FFFBF7',
         'shades-black-400': '#8D8D8D',
+        'shades-black-700': '#484848',
         'shades-black': '#0A0A0A',
         'primary-pink-500': '#EF2C5A',
       },

@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Klasha Demo Dashboard',
-  description: 'Powered by Omo Eng.',
+  description: 'Powered by Eng. Omo',
 };
 
 export default function RootLayout({
@@ -21,10 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex flex-col md:flex-row w-full">
-          <div className="w-1/5">
+          <div className="w-[20%]">
             <Sidebar />
           </div>
-          <div className="w-4/5">
+          <div className="w-[80%]">
             <div className="w-full">
               <Navbar />
             </div>

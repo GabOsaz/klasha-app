@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.td {
+  @apply whitespace-nowrap px-2 md:px-6 py-4 border-b
+}

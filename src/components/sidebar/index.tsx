@@ -2,23 +2,15 @@
 
 import Image from 'next/image';
 import useGetActiveRoute from '@/globalHooks/useGetActiveRoute';
-import { ReactNode } from 'react';
 import Link from 'next/link';
 import SupportBtnIcon from '@/assets/sidebarSvgIcons/SupportBtnIcon';
 import HidePanelIcon from '@/assets/sidebarSvgIcons/HidePanelIcon';
 import logo from '@/assets/logo.png';
+import listItemT from '@/app/types/listItemT';
 import routes from './routes';
 import Button from '../button';
 
-interface listItemType {
-    page: {
-        icon: ReactNode,
-        pageName: 'string',
-        to: string,
-    }
-}
-
-function ListItem({ page }: listItemType) {
+function ListItem({ page }: listItemT) {
   const { isActive } = useGetActiveRoute(page.to);
   return (
     <li className="my-3">
@@ -58,7 +50,7 @@ function Sidebar() {
       <div className="flex flex-col mt-28 space-y-[14px]">
         <Button
           leftIcon={<SupportBtnIcon />}
-          className="rounded-3xl text-white bg-primary-pink-500 w-[120px]"
+          className="rounded-[39px] py-2 text-white bg-primary-pink-500 w-[120px]"
           text="Support"
         />
         <Button
