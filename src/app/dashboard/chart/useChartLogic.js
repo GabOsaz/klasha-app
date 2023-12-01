@@ -1,5 +1,6 @@
 /* eslint-disable no-unsafe-optional-chaining */
 /* eslint-disable import/extensions */
+import getRandomNumber from '@/utils/getRandomNumber';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,7 +12,6 @@ import {
   Filler,
   Legend,
 } from 'chart.js';
-import faker from 'faker';
 
 export const options = {
   responsive: true,
@@ -69,7 +69,7 @@ const useChartLogic = () => {
   );
 
   const labels = ['20 Aug', '21 Aug', '22 Aug', '23 Aug', '24 Aug', '25 Aug'];
-  const fakeData = labels.map(() => faker.datatype.number({ min: 1000, max: 4000 }));
+  const fakeData = labels.map(() => getRandomNumber(1000, 4000));
 
   const data = () => ({
     labels,

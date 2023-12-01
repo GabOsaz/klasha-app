@@ -1,5 +1,5 @@
 import arrayOfLength from '@/utils/arrayOfLength';
-import faker from 'faker';
+import getRandomNumber from '@/utils/getRandomNumber';
 
 const salesSummaryData = [
   {
@@ -19,7 +19,7 @@ const salesSummaryData = [
     amount: '₦1,652.50',
     dateRange: '24 Aug - 01 Sep 21',
     chart: true,
-    data: arrayOfLength(7).map(() => faker.datatype.number({ min: 0, max: 1000 })),
+    data: arrayOfLength(7).map(() => getRandomNumber(0, 1000)),
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const salesSummaryData = [
     amount: '₦1,652.50',
     dateRange: '24 Aug - 01 Sep 21',
     chart: true,
-    data: arrayOfLength(7).map(() => faker.datatype.number({ min: 0, max: 1000 })),
+    data: arrayOfLength(7).map(() => getRandomNumber(0, 1000)),
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const salesSummaryData = [
     amount: '₦1,652.50',
     dateRange: '24 Aug - 01 Sep 21',
     chart: true,
-    data: arrayOfLength(7).map(() => faker.datatype.number({ min: 0, max: 1000 })),
+    data: arrayOfLength(7).map(() => getRandomNumber(0, 1000)),
   },
 ];
 

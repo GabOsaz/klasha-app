@@ -6,6 +6,7 @@ import Marketing from '../../assets/sidebarSvgIcons/Marketing';
 import ExchangeRate from '../../assets/sidebarSvgIcons/ExchangeRate';
 import Checkout from '../../assets/sidebarSvgIcons/Checkout';
 import PaymentLinks from '../../assets/sidebarSvgIcons/PaymentLinks';
+import Wire from '../../assets/sidebarSvgIcons/Wire';
 import routeMap from '../../utils/routeMap';
 
 const routes = [
@@ -63,7 +64,7 @@ const routes = [
     groupTitle: 'Send payments',
     pages: [
       {
-        icon: <Dashboard route={routeMap.exchangeRates} />,
+        icon: <Wire route={routeMap.exchangeRates} />,
         pageName: 'Wire',
         to: routeMap.exchangeRates,
       },
