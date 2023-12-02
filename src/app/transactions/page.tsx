@@ -15,7 +15,7 @@ export default function Transactions() {
   const tHead = ['Transaction ID', 'Source', 'Customer name', 'Customer email', 'Amount', 'Request date', 'Status'];
 
   return (
-    <main className="border rounded-lg py-4 px-0">
+    <main className="border rounded-lg py-4 px-0 slide">
       <TableHeading searchValue={searchValue} setSearchValue={handleChange} />
       <div className="mt-4">
         <Table tHead={tHead} paginatedData={transactionHistoryData} />

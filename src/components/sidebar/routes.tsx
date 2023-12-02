@@ -49,14 +49,14 @@ const routes = [
     groupTitle: 'Accept payments',
     pages: [
       {
-        icon: <Checkout route={routeMap.exchangeRates} />,
+        icon: <Checkout route={routeMap.checkout} />,
         pageName: 'Checkout',
-        to: routeMap.exchangeRates,
+        to: routeMap.checkout,
       },
       {
-        icon: <PaymentLinks route={routeMap.exchangeRates} />,
+        icon: <PaymentLinks route={routeMap.paymentLinks} />,
         pageName: 'Payment Links',
-        to: routeMap.exchangeRates,
+        to: routeMap.paymentLinks,
       },
     ],
   },
@@ -64,9 +64,9 @@ const routes = [
     groupTitle: 'Send payments',
     pages: [
       {
-        icon: <Wire route={routeMap.exchangeRates} />,
+        icon: <Wire route={routeMap.wire} />,
         pageName: 'Wire',
-        to: routeMap.exchangeRates,
+        to: routeMap.wire,
       },
     ],
   },

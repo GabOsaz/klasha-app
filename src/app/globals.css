@@ -29,3 +29,18 @@ body {
 .td {
   @apply whitespace-nowrap px-2 md:px-6 py-4 border-b
 }
+
+.slide {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    translate-y: -50px;
+  }
+  to {
+    translate: 0;
+  }
+}

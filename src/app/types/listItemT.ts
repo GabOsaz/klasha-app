@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, Dispatch, SetStateAction } from 'react';
 
 type listItemT = {
   page: {
@@ -6,6 +6,8 @@ type listItemT = {
     pageName: string,
     to: string,
   },
+  setIsOpen?: Dispatch<SetStateAction<boolean>>
+  isSidebarCollapsed?: boolean
 };
 
 export default listItemT;

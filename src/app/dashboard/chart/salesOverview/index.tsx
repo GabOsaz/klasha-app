@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 'use client';
 
 import { Line } from 'react-chartjs-2';
@@ -22,7 +24,7 @@ function Card({ info }: salesSummaryT) {
       {dateRange && <h3 className={`text-sm font-normal ${darkThemeTextColor}`}>{dateRange}</h3>}
       {chart
         && (
-          <div className="h-[78px] md:h-[78px] w-[210px] mt-4">
+          <div className="h-[78px] md:h-[78px] mt-4">
             <Line options={options} data={data()} />
           </div>
         )}
@@ -35,7 +37,7 @@ function Card({ info }: salesSummaryT) {
 
 function SalesOverview() {
   return (
-    <div className="flex justify-between">
+    <div className="slide justify-center lg:justify-between grid grid-cols-1 md:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
       {salesSummaryData.map((datum) => (
         <Card key={datum.id} info={datum} />
       ))}

@@ -12,14 +12,18 @@ import useChartLogic from './useChartLogic';
 
 function ChartHeading() {
   return (
-    <div className="flex space-x-3 items-center justify-between font-medium">
-      <span className="text-lg font-medium">Sales</span>
-      <span className="text-shades-black-400">|</span>
-      <span className="text-primary-pink-500 text-sm">7 days</span>
-      <span className="text-sm">30 days</span>
-      <Button rightIcon={<Chevron w="18" />} text="USD" className="border rounded-md justify-between font-medium py-2 border-black" />
-      <Button rightIcon={<Chevron w="18" />} text="email" className="border rounded-lg justify-between font-medium w-[280px] py-2 border-black" />
-      <Button leftIcon={<DownArrow />} text="Download report" className="border rounded-lg border-black font-medium py-3" />
+    <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-between font-medium w-full">
+      <div className="flex space-x-8 justify-between items-center">
+        <span className="text-lg font-medium">Sales</span>
+        <span className="text-shades-black-400">|</span>
+        <span className="text-primary-pink-500 text-sm w-15">7 days</span>
+        <span className="text-sm">30 days</span>
+      </div>
+      <div className="flex justify-between space-x-4">
+        <Button rightIcon={<Chevron w="18" />} text="USD" className="border rounded-md font-medium py-1 sm:py-2 border-black" />
+        <Button rightIcon={<Chevron w="18" />} text="email" className="border rounded-lg justify-between md:w-[200px] font-medium py-1 sm:py-2 border-black" />
+        <Button leftIcon={<DownArrow />} text="Download report" className="border rounded-lg border-black font-medium py-1 sm:py-4" />
+      </div>
     </div>
   );
 }
@@ -29,19 +33,19 @@ export default function AreaChart() {
 
   return (
     <div className="w-full mt-12">
-      <div className="w-full md:w-[70%] mr-6">
+      <div className="w-full xl:w-[70%] mx-auto lg:mx-0 pr-0 xl:pr-4">
         <ChartHeading />
       </div>
-      <div className="flex flex-col md:flex-row justify-between mt-4 space-x-0 md:space-x-6">
-        <div className="w-full md:w-[70%]">
+      <div className="flex flex-col lg:flex-row justify-between mt-4 space-y-4 lg:space-y-0 space-x-0 lg:space-x-6">
+        <div className="w-full lg:w-[70%]">
           <div className="flex justify-between w-full">
             <div className="h-[27rem] md:h-[16rem] w-full border border-black rounded-lg px-8 py-10">
               <Line options={options} data={data()} />
             </div>
           </div>
         </div>
-        <div className="w-full md:w-[30%] bg-primary-pink-500 rounded-lg relative p-6">
-          <p className="w-3/4 text-lg text-white">KlashaWire - send money to businesses globally from Africa</p>
+        <div className="w-full lg:w-[30%] h-60 lg:h-auto bg-primary-pink-500 rounded-lg relative p-6">
+          <p className="w-full xl:w-3/4 text-lg text-white">KlashaWire - send money to businesses globally from Africa</p>
           <div className="absolute bottom-6 left-6 z-10">
             <Button text="Send a Wire" className="bg-black rounded-lg px-6 py-3 text-white text-sm" />
           </div>
@@ -49,7 +53,6 @@ export default function AreaChart() {
             <CTACardPattern />
           </div>
         </div>
-
       </div>
     </div>
   );

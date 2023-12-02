@@ -5,6 +5,9 @@ const routeMap = {
   analytics: '/analytics',
   marketing: '/marketing',
   exchangeRates: '/exchangeRates',
+  checkout: '/checkout',
+  paymentLinks: '/paymentLinks',
+  wire: '/wire',
 };
 
 export default routeMap;

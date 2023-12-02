@@ -6,7 +6,7 @@ import tableHeadingT from '../types/tableHeadingT';
 
 function TableHeading({ searchValue, setSearchValue }: tableHeadingT) {
   return (
-    <div className="w-full px-6">
+    <div className="w-full px-6 slide">
       <h1 className="font-medium text-lg text-shades-black">Transaction history</h1>
       <div className="py-4 border-t border-b w-full mt-6 flex justify-between">
         <Input

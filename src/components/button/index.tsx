@@ -1,13 +1,9 @@
 /* eslint-disable react/require-default-props */
-import { ReactNode } from 'react';
+import buttonT from '../../app/types/buttonT';
 
 function Button({
   text, className, leftIcon, rightIcon, onClick,
-}: {
-    text: string,
-    className: string,
-    leftIcon?: ReactNode, rightIcon?: ReactNode, onClick?: () => void
-}) {
+}: buttonT) {
   return (
     <button
       type="button"
