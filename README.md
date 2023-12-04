@@ -1,12 +1,21 @@
 # klasha-app
-A UI conversion demo of Klasha dashboard
-View hosted site here:
+A UI conversion demo of Klasha dashboard.
+
+Visit hosted site here: 
 [https://klasha-app-mw94.vercel.app/]
 
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repo:
+
+```bash
+git clone https://github.com/GabOsaz/klasha-app.git
+
+cd klasha-app
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -20,21 +29,27 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+Run tests:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run test
+```
 
-## Learn More
+## App Features
 
-To learn more about Next.js, take a look at the following resources:
+The application has the following core features:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Navigate to respective module pages listed on the sidebar.
+- Collapsable and expandable sidebar.
+- Fully responsive across all device types.
+- A few unit and integration tests on core features.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Core Technology Used
 
-## Deploy on Vercel
+- Next.js with Typescript ([Next.js documentation](https://nextjs.org/docs))
+- Tailwind CSS ([Documentation](https://v2.tailwindcss.com/docs))
+- React chartjs ([Documentation](https://react-chartjs-2.js.org/))
+- Testing Library/React ([Documentation](https://testing-library.com/docs/react-testing-library/intro/))
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## PS
+A few design concessions were made. Ideally, this would happen only at the express approval of the product manager in alignment with the product designer.

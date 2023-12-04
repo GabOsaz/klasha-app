@@ -8,7 +8,7 @@ function TableHeading({ searchValue, setSearchValue }: tableHeadingT) {
   return (
     <div className="w-full px-6 slide">
       <h1 className="font-medium text-lg text-shades-black">Transaction history</h1>
-      <div className="py-4 border-t border-b w-full mt-6 flex justify-between">
+      <div className="py-4 border-t border-b w-full mt-6 flex flex-col md:flex-row space-y-4 md:space-y-0 justify-between">
         <Input
           type="text"
           value={searchValue}
@@ -17,7 +17,7 @@ function TableHeading({ searchValue, setSearchValue }: tableHeadingT) {
           className="focus:border focus:border-black"
           rightIcon={<SearchInputIcon />}
         />
-        <div className="font-semibold text-xs flex items-center space-x-3">
+        <div className="font-semibold text-xs flex items-center justify-between space-x-3">
           <Button
             rightIcon={<FilterIcon />}
             text="Filter"

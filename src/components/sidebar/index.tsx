@@ -23,6 +23,7 @@ function Sidebar({ setIsSidebarCollapsed, isSidebarCollapsed } : sidebarT) {
         {routes.map((route) => (
           <div key={route.groupTitle} className="mt-8 text-base">
             <p
+              data-testid="routeGroupText"
               className={`text-shades-black-400 transform truncate delay-1000 ${isSidebarCollapsed ? 'text-center' : 'text-start'}`}
             >
               {isSidebarCollapsed ? route.groupTitle.substring(0, 1) : route.groupTitle}
@@ -43,6 +44,7 @@ function Sidebar({ setIsSidebarCollapsed, isSidebarCollapsed } : sidebarT) {
           text={isSidebarCollapsed ? '' : 'Support'}
         />
         <Button
+          dataTestId="togglePannel"
           leftIcon={(
             <div className={isSidebarCollapsed ? 'rotate-180' : ''}>
               <HidePanelIcon />

@@ -21,6 +21,7 @@ function ListItem({ page, setIsOpen, isSidebarCollapsed }: listItemT) {
       >
         <span>{page.icon}</span>
         <span
+          data-testid="routeText"
           className={`${isActive
             ? 'text-primary-pink-500 font-semibold'
             : 'text-shades-black font-normal'} 

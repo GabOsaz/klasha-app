@@ -2,11 +2,12 @@
 import buttonT from '../../app/types/buttonT';
 
 function Button({
-  text, className, leftIcon, rightIcon, onClick,
+  text, className, leftIcon, rightIcon, dataTestId, onClick,
 }: buttonT) {
   return (
     <button
       type="button"
+      data-testid={dataTestId}
       onClick={onClick}
       className={`py-3 text-xs flex items-center px-3 font-semibold ${className}`}
     >

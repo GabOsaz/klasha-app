@@ -5,6 +5,7 @@ type buttonT = {
     className: string,
     leftIcon?: ReactNode,
     rightIcon?: ReactNode,
+    dataTestId?: string,
     onClick?: () => void
 }
 

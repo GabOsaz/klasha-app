@@ -18,7 +18,7 @@ function Card({ info }: salesSummaryT) {
     <div
       className={
         `${cardTheme === 'dark' ? 'bg-black text-white' : 'bg-white'}
-         w-64 h-60 border border-black rounded-lg p-6`
+          h-60 border border-black rounded-lg p-6`
         }
     >
       {dateRange && <h3 className={`text-sm font-normal ${darkThemeTextColor}`}>{dateRange}</h3>}
@@ -37,7 +37,7 @@ function Card({ info }: salesSummaryT) {
 
 function SalesOverview() {
   return (
-    <div className="slide justify-center lg:justify-between grid grid-cols-1 md:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+    <div className="justify-center lg:justify-between grid grid-cols-1 md:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
       {salesSummaryData.map((datum) => (
         <Card key={datum.id} info={datum} />
       ))}
